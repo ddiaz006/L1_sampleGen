@@ -1,0 +1,30 @@
+WARNING: You are trying to use SCRAM architecture 'el8' on host with operating system 'cs8'.
+         This is not supported and likely will not work and you might get build/runtime errors. Please either
+         - use correct SCRAM_ARCH to match your host's operating system.
+         - OR use 'cmssw-el8' script to start a singularity container (http://cms-sw.github.io/singularity.html)
+         - OR use host which has 'el8' installed e.g. lxplus8 for el8, lxplus9 for el9 or lxplus7 for slc7.
+mv: cannot stat 'GENSIMDIGIRAW.root': No such file or directory
+WARNING: You are trying to use SCRAM architecture 'el8' on host with operating system 'cs8'.
+         This is not supported and likely will not work and you might get build/runtime errors. Please either
+         - use correct SCRAM_ARCH to match your host's operating system.
+         - OR use 'cmssw-el8' script to start a singularity container (http://cms-sw.github.io/singularity.html)
+         - OR use host which has 'el8' installed e.g. lxplus8 for el8, lxplus9 for el9 or lxplus7 for slc7.
+16-Jul-2024 23:18:32 CEST  Initiating request to open file file:GENSIMDIGIRAW.root
+----- Begin Fatal Exception 16-Jul-2024 23:18:32 CEST-----------------------
+An exception of category 'FileOpenError' occurred while
+   [0] Constructing the EventProcessor
+   [1] Constructing input source of type PoolSource
+   [2] Calling RootInputFileSequence::initTheFile()
+   [3] Calling StorageFactory::open()
+   [4] Calling File::sysopen()
+Exception Message:
+Failed to open the file 'GENSIMDIGIRAW.root'
+   Additional Info:
+      [a] Input file file:GENSIMDIGIRAW.root could not be opened.
+      [b] open() failed with system error 'No such file or directory' (error code 2)
+----- End Fatal Exception -------------------------------------------------
+rm: cannot remove 'G*.root': No such file or directory
+rm: cannot remove 'Isolation*.txt': No such file or directory
+rm: cannot remove 'GENSIMDIGIRAW.root': No such file or directory
+xrdcp: no such file or directory processing HiddenGluGluH*.root
+rm: cannot remove 'HiddenGluGluH*.root': No such file or directory

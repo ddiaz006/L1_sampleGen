@@ -2,7 +2,7 @@
 
 doSubmit=true
 dt=`date '+%Y%m%d_%H%M%S'`
-reTar=false
+reTar=true #only need once
 
 ###-----     Edit for your working area
 lxplusBase=$PWD/../..   #/afs/cern.ch/work/d/ddiaz/L1SampleGen/cleanBuild
@@ -10,9 +10,9 @@ scriptsDir=$PWD   #/afs/cern.ch/work/d/ddiaz/L1SampleGen/cleanBuild/L1_sampleGen
 ntupleDir=${lxplusBase}/Tuples-el8  #/afs/cern.ch/work/d/ddiaz/L1SampleGen/cleanBuild/Tuples-el8
 #sampleName="HiddenGluGluH_mH-125_Phi-30_ctau-100"
 sampleName="HiddenGluGluH_mH-125_Phi-15_ctau-100_4b"
-outdir="/store/group/LLPs/L1LLPSample/"${sampleName}"_TuneCP5_14TeV-pythia8/condor_FALL22_UAF/$dt/0000/"
-NJobs=1000
-NEvents=100 
+outdir="/store/group/LLPs/russelld/"${sampleName}"_TuneCP5_14TeV-pythia8/condor_FALL22_UAF/$dt/0000/"
+NJobs=2
+NEvents=10 
 ###----
 # Get the first letter of the username and build proxy path
 FIRST_LETTER=$(echo $USER | cut -c 1)

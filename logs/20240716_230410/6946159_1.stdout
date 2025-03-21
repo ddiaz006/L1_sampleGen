@@ -1,0 +1,150 @@
+System software: CentOS Stream release 8
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson/CN=1267260652
+issuer    : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+identity  : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+type      : RFC3820 compliant impersonation proxy
+strength  : 2048
+path      : /afs/cern.ch/user/r/russelld/private/x509up
+timeleft  : 173:56:10
+key usage : Digital Signature, Key Encipherment
+=== VO cms extension information ===
+VO        : cms
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+issuer    : /DC=ch/DC=cern/OU=computers/CN=cms-auth.web.cern.ch
+attribute : /cms/Role=NULL/Capability=NULL
+attribute : /cms/country/Role=NULL/Capability=NULL
+attribute : /cms/country/us/Role=NULL/Capability=NULL
+timeleft  : 173:56:10
+uri       : voms-cms-auth.app.cern.ch:15000
+
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson/CN=1267260652
+issuer    : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+identity  : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+type      : RFC3820 compliant impersonation proxy
+strength  : 2048
+path      : /afs/cern.ch/user/r/russelld/private/x509up
+timeleft  : 173:56:09
+key usage : Digital Signature, Key Encipherment
+=== VO cms extension information ===
+VO        : cms
+subject   : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=russelld/CN=860783/CN=Marroquin Solares Russell Denilson
+issuer    : /DC=ch/DC=cern/OU=computers/CN=cms-auth.web.cern.ch
+attribute : /cms/Role=NULL/Capability=NULL
+attribute : /cms/country/Role=NULL/Capability=NULL
+attribute : /cms/country/us/Role=NULL/Capability=NULL
+timeleft  : 173:56:09
+uri       : voms-cms-auth.app.cern.ch:15000
+
+working area:  /srv
+CMSSW_125x.tar.gz
+CMSSW_125x_tup.tar.gz
+MakeDIGI_cfg.py
+MakeGS_cfg.py
+_condor_stderr
+_condor_stdout
+runJob.sh
+russelld.cc
+scratch
+srv
+tmp
+var
+var_tmp
+x509up
+opening MC GENSIM/DIGI CMSSW
+/srv
+@@@@@@@@@@ RUNNING STEP 1 @@@@@@@@@@@@@@@@@@@@@@
+Do an ls to see if GENSIM rootgenerated
+CMSSW_125x.tar.gz
+CMSSW_125x_tup.tar.gz
+CMSSW_12_5_2_patch1
+GS.root
+MakeDIGI_cfg.py
+MakeGS_cfg.py
+_condor_stderr
+_condor_stdout
+runJob.sh
+russelld.cc
+scratch
+srv
+tmp
+var
+var_tmp
+x509up
+@@@@@@@@@@ RUNNING STEP 2 @@@@@@@@@@@@@@@@@@@@@@
+Do an ls to see if output roots both generated
+CMSSW_125x.tar.gz
+CMSSW_125x_tup.tar.gz
+GS.root
+Isolation_Mu_Isolation.txt
+Isolation_Mu_Track_infolist.txt
+MakeDIGI_cfg.py
+MakeGS_cfg.py
+_condor_stderr
+_condor_stdout
+runJob.sh
+russelld.cc
+scratch
+srv
+tmp
+var
+var_tmp
+x509up
+@@@@@@@@@@ opening ntuple CMSSW @@@@@@@@@@@@@@@@@@@@@@
+reached the error when accessing Tuple-el8. Do pwd to see if we are in the correct loc.
+/srv
+@@@@@@@@@@ do an ls and pwd @@@@@@@@@@@@@@@@@@@@@@
+__pycache__
+display
+inputs125X.root
+perfNano.root
+perfTuple.root
+plotTemplate.py
+run.sh
+runIDNTuplerHGCTune.py
+runInputs110X.py
+runInputs125X.py
+runL1PFNTupler_Full125x.py
+runPerformanceNTuple.py
+runRespNTupler.py
+runTauTupler.py
+scouting
+scripts
+/srv/CMSSW_12_5_2_patch1/src/FastPUPPI/NtupleProducer/python
+@@@@@@@@@@ RUNNING STEP 3 (ntuple) @@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@ ls and check that runL1PFNTupler ran @@@@@@@@@@@@@@@@@@@@@@
+__pycache__
+display
+inputs125X.root
+perfNano.root
+perfTuple.root
+pfTuple.root
+plotTemplate.py
+run.sh
+runIDNTuplerHGCTune.py
+runInputs110X.py
+runInputs125X.py
+runL1PFNTupler_Full125x.py
+runPerformanceNTuple.py
+runRespNTupler.py
+runTauTupler.py
+scouting
+scripts
+@@@@@@@@@@ COPYING OUTPUT @@@@@@@@@@@@@@@@@@@@@@
+copying to:  /store/group/LLPs/russelld/HiddenGluGluH_mH-125_Phi-15_ctau-100_4b_TuneCP5_14TeV-pythia8/condor_FALL22_UAF/20240716_230410/0000/
+__pycache__
+display
+inputs125X.root
+perfNano.root
+perfTuple.root
+pfTuple.root
+plotTemplate.py
+run.sh
+runIDNTuplerHGCTune.py
+runInputs110X.py
+runInputs125X.py
+runL1PFNTupler_Full125x.py
+runPerformanceNTuple.py
+runRespNTupler.py
+runTauTupler.py
+scouting
+scripts

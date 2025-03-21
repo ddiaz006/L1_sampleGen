@@ -32,6 +32,8 @@ export SCRAM_ARCH=el8_amd64_gcc10
 tar -zxf CMSSW_125x_tup.tar.gz
 mv GENSIMDIGIRAW.root CMSSW_12_5_2_patch1/src/FastPUPPI/NtupleProducer/python/
 rm G*.root
+echo "reached the error when accessing Tuple-el8. Do pwd to see if we are in the correct loc."
+pwd
 cd CMSSW_12_5_2_patch1/src 
 cmsenv
 cd FastPUPPI/NtupleProducer/python/

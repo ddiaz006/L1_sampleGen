@@ -5,6 +5,7 @@ Eventually, your working area should have this code as well as the ntupler that 
 
 This will be the base of our working area.
 ```
+ls .
 L1_sampleGen  Tuples-el8
 ```
 Let's get the Tuples-el8 directory ready.
@@ -25,7 +26,7 @@ git cms-addpkg L1Trigger/TrackTrigger
 git cms-addpkg SimTracker/TrackTriggerAssociation
 git cms-addpkg L1Trigger/Phase2L1ParticleFlow
 
-git clone git@github.com:ddiaz006/FastPUPPI.git -b 12_5_X
+git clone https://github.com/Brainz22/FastPUPPI.git -b 12_5_X
 
 scram b -j8
 ```
@@ -38,11 +39,12 @@ git clone git@github.com:ddiaz006/L1_sampleGen.git
 First source your CMSSW environment so you can run the Driver commands in the submitJobs.sh.
 ```
 cd L1_sampleGen/12_5_x
+bash setup.sh
 cd CMSSW_12_5_2_patch1/src/; cmsenv; cd -;
 ```
 Mostly, one needs to set some options in submitJobs.sh before they can begin running MC generation.
 
-Most important is to point to proper directories
+Most important: Inside `submitJobs.sh` is, point to proper directories in the code segment below.
 
 ```
 doSubmit=false #If you are just testing this will prevent actual condor submission
@@ -60,7 +62,21 @@ NEvents=10
 ###----
 ```
 
+# Submit Jobs
 
+* We need to copy the proper `...-fragment.py` files into the CMSSW.
+  -  Inside `L1_sampleGen/12_5_x`, do `cp genConfigs/*.py CMSSW_12_5_2_patch1/src/Configuration/GenProduction/python/`
+ 
+* Now, we can run `bash submitJobs.sh`.
+
+* If the above commands raises the error: `Submitting job(s)ERROR: unable to read proxy file`, we need to direct it to the proxy file produced from authentication of Voms-Certificate.
+  -  `SubmitJobs.sh` has a line like `Proxy_path="/afs/cern.ch/user/${FIRST_LETTER}/${USER}/private/x509up"`.
+  -  After authenticating your Voms Certificate, a file will be created, e.g. `/tmp/x509up_u151471`. We need to copy this file as:
+  ```
+  cp /tmp/x509up_u151471 ~/private/x509up
+  ```
+  This will match the file and path in the previous bullet point and `bash submitJobs.sh` should work.
+  
 # Utilities
 ## Get Latest version of the fragment code
 ```
